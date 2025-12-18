@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script async src="//www.instagram.com/embed.js"></script>
 <!-- Theme Configuration -->
 <script id="tailwind-config">
         tailwind.config = {
@@ -141,14 +142,18 @@
 <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-8">
 <!-- Card 1 - Instagram Reel -->
 <div class="group relative flex flex-col gap-3">
-  <div class="relative aspect-square w-full overflow-hidden rounded-xl bg-surface-dark shadow-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-primary/20">
-    <!-- Instagram Reel iframe -->
-    <iframe class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-xl" 
-            src="https://www.instagram.com/reel/REEL_ID/embed" 
-            frameborder="0" allowfullscreen></iframe>
+  <div class="relative w-full overflow-hidden rounded-xl shadow-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-primary/20">
+    
+    <!-- Instagram Embed -->
+    <blockquote class="instagram-media" data-instgrm-captioned 
+      data-instgrm-permalink="https://www.instagram.com/reel/DN1Dbui3ArF/?utm_source=ig_embed&amp;utm_campaign=loading" 
+      data-instgrm-version="14" 
+      style="margin:0; width:100%;">
+    </blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
 
     <!-- Hover Overlay -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-background-dark/60 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+    <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/40 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
       <button class="flex size-12 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:scale-110 hover:bg-white hover:text-primary transition-all">
         <span class="material-symbols-outlined text-3xl">play_arrow</span>
       </button>
@@ -164,6 +169,7 @@
     </div>
   </div>
 </div>
+
 <!-- Card 2 -->
 <div class="group relative flex flex-col gap-3">
 <div class="relative aspect-square w-full overflow-hidden rounded-xl bg-surface-dark shadow-2xl transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-primary/20">
